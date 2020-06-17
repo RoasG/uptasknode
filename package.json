@@ -1,0 +1,46 @@
+{
+    "name": "uptaskproy",
+    "version": "1.0.0",
+    "description": "Proyecto de UpTask",
+    "main": "index.js",
+    "scripts": {
+        "desarrollo": "concurrently \"npm run dev\" \"npm run watch\"",
+        "dev": "nodemon ./index.js",
+        "start": "node ./index.js",
+        "watch": "webpack --w --mode development"
+    },
+    "author": "Gonzalo Roa Castillo",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "bcrypt-nodejs": "0.0.3",
+        "body-parser": "^1.19.0",
+        "concurrently": "^5.2.0",
+        "connect-flash": "^0.1.1",
+        "cookie-parser": "^1.4.5",
+        "currently": "0.0.8",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-session": "^1.17.1",
+        "express-validator": "^6.4.1",
+        "html-to-text": "^5.1.1",
+        "juice": "^6.0.0",
+        "mysql2": "^2.1.0",
+        "nodemailer": "^6.4.8",
+        "passport": "^0.4.1",
+        "passport-local": "^1.0.0",
+        "pug": "^2.0.4",
+        "sequelize": "^5.21.9",
+        "shortid": "^2.2.15",
+        "slug": "^2.1.1",
+        "sweetalert2": "^9.14.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.10.2",
+        "@babel/preset-env": "^7.10.2",
+        "babel-loader": "^8.1.0",
+        "nodemon": "^2.0.4",
+        "webpack": "^4.43.0",
+        "webpack-cli": "^3.3.11"
+    }
+}
